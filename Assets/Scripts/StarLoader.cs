@@ -19,7 +19,7 @@ using Toggle = UnityEngine.UI.Toggle;
 
 public class StarLoader : MonoBehaviour
 {
-    public TextAsset file;
+//    public TextAsset file;
     public Queue<Tuple<int, Action<int>>> queue = new Queue<Tuple<int, Action<int>>>();
 
     public Queue<Tuple<int, Action<int>>> actions = new Queue<Tuple<int, Action<int>>>();
@@ -79,7 +79,7 @@ public class StarLoader : MonoBehaviour
 //            createMenuItem($"test{i}", i);
 //        }
 
-        new Thread(LoadStars).Start(file.bytes);
+        new Thread(LoadStars).Start(null);
 //        new Thread(LoadConstellations).Start(Application.dataPath);
     }
 
