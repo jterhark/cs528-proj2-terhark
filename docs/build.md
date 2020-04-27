@@ -1,5 +1,6 @@
 # Build
 > Note: This set of instructions was created using Unity 2019.2
+
 1. Download the source code, available [here](https://github.com/jterhark/cs528-proj2-terhark)
 2. Open in Unity 
 3. Open the `Universe` scene located in `Assets/Scenes`.
