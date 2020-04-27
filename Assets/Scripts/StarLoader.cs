@@ -46,6 +46,7 @@ public class StarLoader : MonoBehaviour
 
     private string streamingAssets;
     public ParticleSystem system;
+    public Material lineMaterial;
 
 
     // Start is called before the first frame update
@@ -216,6 +217,7 @@ public class StarLoader : MonoBehaviour
                     foreach (var star in _stars)
                     {
                         emitParams.position = star.Value.transform.position;
+//                        emitParams.startColor = Color.blue;
 //                        break;
                         system.Emit(emitParams, 1);
                     }
@@ -250,7 +252,6 @@ public class StarLoader : MonoBehaviour
     private void LoadConstellations(object o)
     {
         var dataPath = o as string;
-//        var z = Path.Combine(dataPath, "Data", "skycultures");
         var z = Path.Combine(streamingAssets, "skycultures");
         var infoFile = new DirectoryInfo(z);
         var subs = infoFile.EnumerateDirectories();
@@ -305,6 +306,7 @@ public class StarLoader : MonoBehaviour
                     root.name = name;
                     root.SetActive(false);
                     root.transform.position = new Vector3(0, 0, 0);
+                    createMenuItem("Off", 0);
 
                     foreach (var c in constellations[name])
                     {
@@ -314,13 +316,14 @@ public class StarLoader : MonoBehaviour
                             x.transform.position = new Vector3(0, 0, 0);
                             x.transform.parent = root.transform;
                             var rend = x.AddComponent<LineRenderer>();
-                            rend.widthMultiplier = 0.1f;
+                            rend.widthMultiplier = 0.3f;
                             var lines = new Vector3[2];
                             lines[0] = item1.transform.position;
                             lines[1] = item2.transform.position;
                             rend.SetPositions(lines);
                             rend.shadowCastingMode = ShadowCastingMode.Off;
                             rend.receiveShadows = false;
+                            rend.material = lineMaterial;
                         }
                     }
 
