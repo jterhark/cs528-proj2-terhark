@@ -23,6 +23,7 @@ public class MusicLoader : MonoBehaviour
             player.Play();
         }
 
+        CreateMenuItem("Off", 0);
         var i = 0;
         foreach (var clip in sources)
         {

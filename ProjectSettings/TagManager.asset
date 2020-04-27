@@ -6,6 +6,7 @@ TagManager:
   tags:
   - sphere
   - player_head
+  - sol
   layers:
   - Default
   - TransparentFX
