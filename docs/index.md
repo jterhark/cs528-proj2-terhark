@@ -1,3 +1,6 @@
+<a href="https://youtu.be/tkhyn_q1VmY" target="_blank"><img src="http://img.youtube.com/vi/tkhyn_q1VmY/0.jpg" 
+ width="240" height="180" border="10" /></a>
+
 # About
 This application visualizes stars from the [HYG Database](https://github.com/astronexus/HYG-Database). Users can travel through a section of the milky way and see various constellations from cultures around the world. This application was developed for CS 528 at the University of Illinois at Chicago and was built on Unity 2019.2.
 

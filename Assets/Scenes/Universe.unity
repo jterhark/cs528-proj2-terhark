@@ -251,7 +251,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -966,14 +966,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8330c1ddd8b508478b769f76efd2e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  system: {fileID: 911783694}
+  lineMaterial: {fileID: 2100000, guid: 4b4041a8aa7930a4081ba53f8f1c055d, type: 2}
   constellationMenu: {fileID: 115107594}
   togglePrefab: {fileID: 2021069450349432447, guid: 971cff8a88c233846bebd93149374c97,
     type: 3}
   menu: {fileID: 1015363811}
   starPrefab: {fileID: 6364743069364341866, guid: 069c0315c2a9f644986c6d8b1cf09cdb,
     type: 3}
-  system: {fileID: 911783694}
-  lineMaterial: {fileID: 2100000, guid: 4b4041a8aa7930a4081ba53f8f1c055d, type: 2}
 --- !u!4 &562893826
 Transform:
   m_ObjectHideFlags: 0

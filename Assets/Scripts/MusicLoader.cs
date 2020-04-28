@@ -18,7 +18,7 @@ public class MusicLoader : MonoBehaviour
     {
         if (sources.Any())
         {
-            player.Stop();
+//            player.Stop();
             player.clip = sources[0];
             player.Play();
         }
@@ -46,7 +46,12 @@ public class MusicLoader : MonoBehaviour
         menu.GetComponent<OMenu>().menuItems[index] = item.GetComponent<Selectable>();
         item.GetComponent<RectTransform>().localPosition += new Vector3(0.7f * (index/15), (-0.0804f * (index % 15)), 0.0f);
         item.GetComponentInChildren<Text>().text = culture;
-        
+
+        if (index == 1)
+        {
+            toggle.isOn = true;
+        }
+
         return item;
     }
 
@@ -55,6 +60,7 @@ public class MusicLoader : MonoBehaviour
         if (name == "Off")
         {
             player.Stop();
+            Debug.Log("MUSIC STOPPED");
         }
         else
         {

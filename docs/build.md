@@ -1,6 +1,9 @@
 # Build
 > Note: This set of instructions was created using Unity 2019.2
 
+The simplest way of running the application is to download and extract the release on github (located [here](https://github.com/jterhark/cs528-proj2-terhark/releases)). The following instructions describe building from the source code.
+ 
+
 1. Download the source code, available [here](https://github.com/jterhark/cs528-proj2-terhark)
 2. Open in Unity 
 3. Open the `Universe` scene located in `Assets/Scenes`.
