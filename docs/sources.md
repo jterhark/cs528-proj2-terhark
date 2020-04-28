@@ -12,6 +12,9 @@ Data used for constellations. The necessary files were extracted from the reposi
 ### <a href="https://github.com/andydbc/HologramShader">Hologram Shader</a>
 Shader used on line renderers for constellations and compass
 
+### Stars
+The sprite used for the stars was created by me using Photoshop.
+
 ## Audio
 ### <a href="https://www.youtube.com/audiolibrary/music">Youtube Music Library</a>
 The following songs were used from the YouTube Music Library and can be found by going to the page linked above and searching for:
